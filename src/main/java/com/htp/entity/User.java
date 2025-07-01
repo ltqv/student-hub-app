@@ -16,10 +16,9 @@ import lombok.Data;
  */
 @Data
 public class User {
-    @Column(name = "id")
-    private int id;
     @Column(name = "username")
     private String username;
+    @Column(name = "password_hash")
     private String password;
     @Column(name = "full_name")
     private String fullName;
@@ -27,6 +26,6 @@ public class User {
     private String phoneNumber;
     @Column(name = "email")
     private String email;
-    @Column(name = "role_names_json")
+    @Column(name = "role_names_list_json")
     private List<Role> roles = new ArrayList<>();
 }

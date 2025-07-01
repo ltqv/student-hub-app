@@ -9,7 +9,7 @@ package com.htp.enums;
  * @author htphu
  */
 public enum Role {
-    ADMIN,
+    STUDENT,
     TEACHER,
-    STUDENT
+    ADMIN
 }
